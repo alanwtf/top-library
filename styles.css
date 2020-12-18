@@ -1,0 +1,104 @@
+.add-book{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-add{
+    padding: 10px 20px;
+    border: 1px solid lightgray;
+    background-color: lightgreen;
+    border-radius: 3px;
+    font-size: 24px;
+    transition: all .1s ease;
+}
+
+.control-btns{
+    display:flex;
+    justify-content: space-between;
+}
+
+.btn-add:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+.btn-add:active{
+    background-color: darkgreen;
+}
+
+.library{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    padding: 10px 0;
+    padding: 20px;
+}
+
+.title, .author, .pages, .read{
+    padding-bottom: 15px;
+}
+
+.btn-status, .btn-delete{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.btn-delete{
+    background-color: rgb(255, 59, 59);
+    border: 1px solid red;
+}
+
+.btn-delete:hover{
+    background-color: red;
+}
+
+.btn-status{
+    background-color: rgb(61, 61, 255);
+    border: 1px solid blue;
+}
+
+.btn-status:hover{
+    background-color:blue;
+    border: 1px solid blue;
+}
+
+.modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.add-book-form{
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close{
+    float: right;
+}
+
+.close:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="add-book">
+            <button class="btn-add" onclick="showModal()">Add New Book</button>
+        </div>
+        <div class="modal">
+            <div class="add-book-form">
+                <span class="close" onclick="closeModal()">X</span>
+                <label for="name">Name of the Book</label>
+                <input name="name" type="text" id="name">
+                <br>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author">
+                <br>
+                <label for="pages">Number of pages</label>
+                <input type="text" name="pages" id="pages">
+                <br>
+                <label for="isRead">Have you read it yet?</label>
+                <input type="checkbox" name="isRead" id="isRead">
+                <br>
+                <button onclick="addNewBook()">Add Book</button>
+            </div>
+        </div>
+        <div class="library">
+            <div class="book">
+                <div class="title" style="text-align: center;">
+                    manuelita vivia en pehuajo pero un dia se marcho
+                </div>
+                <div class="author">
+                    Borges
+                </div>
+                <div class="pages">
+                    100
+                </div>
+                <div class="read">
+                    Not read yet.
+                </div>
+                <div class="control-btns">
+                    <button class="btn-add btn-status">Change status</button>
+                    <button class="btn-add btn-delete">Delete</button>
+                </div>
+            </div>
+            <div class="book">
+                <div class="title">
+                    Rayuela
+                </div>
+                <div class="author">
+                    Borges
+                </div>
+                <div class="pages">
+                    100
+                </div>
+                <div class="read">
+                    Not read yet.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
